@@ -3,6 +3,7 @@ import pandas as pd
 import config
 from utils import create_buffers, crop_to_buffer, apply_cloud_mask, compute_ndvi, remove_builtup
 from plot_chart import plot_ndvi_series
+from download_data import download_images
 
 
 def main(data_dir, points_fn, BUFFER_DIST, tif_filenames, NODATA, CLOUD_PROB_THRESHOLD, CLOUD_PROB_IDX, RED_IDX, NIR_IDX, NDVI_STD_THRESH, NDVI_MIN_THRESH):
@@ -27,6 +28,8 @@ def main(data_dir, points_fn, BUFFER_DIST, tif_filenames, NODATA, CLOUD_PROB_THR
         None
     """
 
+    #download images
+    download_images()
 
     # create buffer around locations
     buffers = create_buffers(data_dir, points_fn, BUFFER_DIST)
