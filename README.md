@@ -19,7 +19,7 @@ conda env create -f environment.yml
 
 Activate conda environment.
 ```
-conda activate task_malta
+conda activate task_ecostack
 ```
 ## Usage
 Run main.py to create a time series chart.

@@ -1,6 +1,5 @@
-name: task_malta
+name: task_ecostack
 channels:
-  - default
   - conda-forge
 dependencies:
   - geopandas
