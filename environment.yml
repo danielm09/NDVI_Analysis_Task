@@ -1,0 +1,11 @@
+name: task_malta
+channels:
+  - default
+  - conda-forge
+dependencies:
+  - geopandas
+  - matplotlib
+  - numpy
+  - python=3.10
+  - rasterio
+  - jupyter
